@@ -1,0 +1,12 @@
+<!--pages/components/Dialog/dialog.wxml-->
+<view class='dialog-container' hidden="{{!isShow}}">
+    <view class='mask'></view>
+    <view class='dialog'>
+        <view class='dialog-title'>{{ title }}</view>
+        <view class='dialog-content'>{{ content }}</view>
+        <view class='dialog-footer'>
+            <view class='dialog-btn' catchtap='cancelEvent'>{{ cancelText }}</view>
+            <view class='dialog-btn' catchtap='confirmEvent'>{{ confirmText }}</view>
+        </view>
+    </view>
+</view>

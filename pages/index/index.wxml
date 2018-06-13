@@ -1,0 +1,12 @@
+<view class="container">
+    <dialog id='dialog' 
+      title='dialog标题' 
+      content='dialog内容部分' 
+      cancelText='取消' 
+      confirm='谢谢你'
+      bind:cancelEvent="cancelEvent"  
+      bind:confirmEvent="confirmEvent">
+    </dialog>
+    
+    <button type="primary" bindtap="showDialog"> 点我显示 </button>
+</view>
